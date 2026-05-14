@@ -1,0 +1,143 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Modern business color palette */
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 220 76% 51%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 215 20% 65%;
+    --secondary-foreground: 220 76% 51%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 191 91% 37%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 220 76% 51%;
+    --radius: 0.5rem;
+    --chart-1: 220 76% 51%;
+    --chart-2: 191 91% 37%;
+    --chart-3: 214 32% 38%;
+    --chart-4: 185 71% 47%;
+    --chart-5: 231 44% 56%;
+  }
+
+  .dark {
+    --background: 230 14% 10%;
+    --foreground: 0 0% 98%;
+    --card: 230 14% 12%;
+    --card-foreground: 0 0% 98%;
+    --popover: 230 14% 12%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 220 76% 51%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 215 20% 25%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 220 14% 18%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 191 91% 37%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 230 14% 20%;
+    --input: 230 14% 20%;
+    --ring: 220 76% 51%;
+    --chart-1: 220 76% 51%;
+    --chart-2: 191 91% 37%;
+    --chart-3: 214 32% 38%;
+    --chart-4: 185 71% 47%;
+    --chart-5: 231 44% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+}
+
+@layer components {
+  /* Animation classes */
+  .fade-in {
+    @apply opacity-0 transition-opacity duration-700 ease-in-out;
+  }
+
+  .fade-in.appear {
+    @apply opacity-100;
+  }
+
+  .slide-up {
+    @apply translate-y-10 opacity-0 transition-all duration-700 ease-in-out;
+  }
+
+  .slide-up.appear {
+    @apply translate-y-0 opacity-100;
+  }
+
+  .slide-right {
+    @apply -translate-x-10 opacity-0 transition-all duration-700 ease-in-out;
+  }
+
+  .slide-right.appear {
+    @apply translate-x-0 opacity-100;
+  }
+
+  .slide-left {
+    @apply translate-x-10 opacity-0 transition-all duration-700 ease-in-out;
+  }
+
+  .slide-left.appear {
+    @apply translate-x-0 opacity-100;
+  }
+
+  .scale-up {
+    @apply scale-95 opacity-0 transition-all duration-700 ease-in-out;
+  }
+
+  .scale-up.appear {
+    @apply scale-100 opacity-100;
+  }
+
+  /* Sections and layouts */
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .container-wide {
+    @apply container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+}
