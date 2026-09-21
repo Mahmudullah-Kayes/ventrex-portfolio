@@ -131,7 +131,7 @@ export default function ServicesSection({
                         onClick={() => {
                           const message = `Hi! I'm interested in learning more about your ${service.title} service. Can we discuss how you can help my business?`;
                           const encodedMessage = encodeURIComponent(message);
-                          const whatsappUrl = `https://wa.me/8801737282427?text=${encodedMessage}`;
+                          const whatsappUrl = `https://wa.me/8801795789511?text=${encodedMessage}`;
                           window.open(whatsappUrl, '_blank');
                         }}
                         className="block w-full"

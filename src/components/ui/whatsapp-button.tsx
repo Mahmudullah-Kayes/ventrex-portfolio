@@ -21,7 +21,7 @@ const messages = [
 ];
 
 export default function WhatsAppButton({ 
-  phoneNumber = "8801737282427", // Replace with your actual WhatsApp number (Bangladesh format)
+  phoneNumber = "8801795789511", 
   message = "Hi! I need help with my business needs. Can we discuss?",
   className = ""
 }: WhatsAppButtonProps) {

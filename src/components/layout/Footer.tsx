@@ -43,7 +43,7 @@ export default function Footer() {
                 <span className="sr-only">LinkedIn</span>
               </Link>
               <Link 
-                href="https://wa.me/8801737282427?text=Hi! I found your website and would like to learn more about your services."
+                href="https://wa.me/8801795789511?text=Hi! I found your website and would like to learn more about your services."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -137,15 +137,20 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex gap-3 text-muted-foreground">
                 <MapPin size={20} className="shrink-0 text-primary" />
-                <span>Bheramara Bazar Kushtia<br />Khulna, Bangladesh</span>
+                <span>Dhaka badda 1212</span>
               </li>
               <li className="flex gap-3 text-muted-foreground">
                 <Phone size={20} className="shrink-0 text-primary" />
-                <span>+88 01737282427</span>
+                <span>+88 01795789511</span>
               </li>
               <li className="flex gap-3 text-muted-foreground">
                 <Mail size={20} className="shrink-0 text-primary" />
-                <span>ventrexmedia@gmail.com</span>
+                <a 
+                  href="mailto:support.ventrexglobal@gmail.com" 
+                  className="break-all hover:text-primary transition-colors"
+                >
+                  support.ventrexglobal@gmail.com
+                </a>
               </li>
             </ul>
           </div>

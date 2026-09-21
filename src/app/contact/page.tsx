@@ -66,8 +66,8 @@ export default function ContactPage() {
                         <div className="min-w-0 flex-1">
                           <h3 className="font-semibold mb-1 text-base">Our HQ</h3>
                           <p className="text-muted-foreground text-sm leading-snug">
-                          Bheramara Bazar Kushtia<br />
-                          Khulna, Bangladesh
+                          Dhaka Badda 1212<br />
+                          Dhaka, Bangladesh
                           </p>
                           <p className="text-xs text-primary mt-1 font-medium">Visit us for strategy sessions</p>
                         </div>
@@ -82,7 +82,7 @@ export default function ContactPage() {
                         <div className="min-w-0 flex-1">
                           <h3 className="font-semibold mb-1 text-base">Call Us Direct</h3>
                           <p className="text-muted-foreground font-mono text-sm">
-                          +88 01737282427
+                          +88 01795789511
                           </p>
                           <p className="text-xs text-primary mt-1 font-medium">Mon-Thu: 9am - 5pm GMT</p>
                         </div>
@@ -96,10 +96,12 @@ export default function ContactPage() {
                         </div>
                         <div className="min-w-0 flex-1">
                           <h3 className="font-semibold mb-1 text-base">Email Us</h3>
-                          <p className="text-muted-foreground text-sm leading-snug">
-                          ventrexmedia@gmail.com
-                            
-                          </p>
+                          <a 
+                            href="mailto:support.ventrexglobal@gmail.com" 
+                            className="text-muted-foreground text-xs sm:text-sm leading-snug break-all hover:text-primary transition-colors block"
+                          >
+                            support.ventrexglobal@gmail.com
+                          </a>
                           <p className="text-xs text-primary mt-1 font-medium">Response within 1 hours</p>
                         </div>
                       </CardContent>
@@ -157,7 +159,7 @@ export default function ContactPage() {
                       <span className="sr-only">LinkedIn</span>
                     </Link>
                     <Link 
-                      href="https://wa.me/8801737282427?text=Hi! I found your website and would like to discuss my marketing needs."
+                      href="https://wa.me/8801795789511?text=Hi! I found your website and would like to discuss my marketing needs."
                       target="_blank"
                       rel="noopener noreferrer"
                       className="group p-4 bg-background rounded-xl text-primary hover:bg-primary hover:text-white transition-all duration-300 hover:scale-110 shadow-sm"
@@ -195,7 +197,7 @@ export default function ContactPage() {
           <AnimatedSection type="fade" className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="mb-4 text-3xl font-bold">Visit Our Office</h2>
             <p className="text-muted-foreground text-lg">
-              Located in Bheramara Bazar, Kushtia, in the heart of Khulna Division, Bangladesh. Schedule a visit for an in-person strategy session and discover how we can help your business grow.
+              Located in Badda, Dhaka 1212, Bangladesh. Schedule a visit for an in-person strategy session and discover how we can help your business grow.
             </p>
           </AnimatedSection>
 
@@ -204,8 +206,8 @@ export default function ContactPage() {
               {/* Map container with enhanced styling */}
               <div className="rounded-lg overflow-hidden shadow-lg h-[500px] relative border-2 border-primary/20">
                 <iframe
-                  title="Ventrex Office Location Map - Bheramara Bazar, Kushtia"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14461.0!2d88.9917!3d24.0167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbf856c6b8b5e3%3A0x8c3a1f5b1e5f5c5d!2sBheramara%20Bazar%2C%20Kushtia%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1700150544087!5m2!1sen!2sus&zoom=15&markers=color:red%7Clabel:V%7C24.0167,88.9917"
+                  title="Ventrex Office Location Map - Dhaka Badda 1212"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14605.123!2d90.4255!3d23.7808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c79234b6b1dd%3A0x28976b91c13d803!2sBadda%2C%20Dhaka%201212%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1700150544087!5m2!1sen!2sbd&zoom=14"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -230,9 +232,8 @@ export default function ContactPage() {
                   <div>
                     <h3 className="text-lg font-semibold mb-2">Exact Location</h3>
                     <p className="text-muted-foreground mb-2">
-                      <strong>Address:</strong> Bheramara Bazar, Kushtia<br />
-                      <strong>Division:</strong> Khulna, Bangladesh<br />
-                      <strong>Coordinates:</strong> 24°1'N 88°59.5'E
+                      <strong>Address:</strong> Dhaka Badda 1212<br />
+                      <strong>Division:</strong> Dhaka, Bangladesh
                     </p>
                   </div>
                 </div>
